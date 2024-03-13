@@ -162,7 +162,7 @@ const ProfileSection = () => {
                           Johne Doe
                         </Typography>
                       </Stack>
-                      <Typography variant="subtitle2">Project Admin</Typography>
+                      <Typography variant="subtitle2">Admin</Typography>
                     </Stack>
                     <OutlinedInput
                       sx={{ width: '100%', pr: 1, pl: 2, my: 2 }}
