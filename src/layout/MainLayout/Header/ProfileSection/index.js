@@ -9,21 +9,19 @@ import {
   Avatar,
   Box,
   Card,
-  CardContent,
   Chip,
   ClickAwayListener,
   Divider,
   Grid,
-  InputAdornment,
+  //InputAdornment,
   List,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  OutlinedInput,
+  //OutlinedInput,
   Paper,
   Popper,
   Stack,
-  Switch,
   Typography
 } from '@mui/material';
 
@@ -33,11 +31,11 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
 import Transitions from 'ui-component/extended/Transitions';
-import UpgradePlanCard from './UpgradePlanCard';
+//import UpgradePlanCard from './UpgradePlanCard';
 import User1 from 'assets/images/users/user-round.svg';
 
 // assets
-import { IconLogout, IconSearch, IconSettings, IconUser } from '@tabler/icons';
+import { IconLogout,  IconSettings, IconUser } from '@tabler/icons';
 
 // ==============================|| PROFILE MENU ||============================== //
 
@@ -45,10 +43,7 @@ const ProfileSection = () => {
   const theme = useTheme();
   const customization = useSelector((state) => state.customization);
   const navigate = useNavigate();
-
-  const [sdm, setSdm] = useState(true);
-  const [value, setValue] = useState('');
-  const [notification, setNotification] = useState(false);
+  //const [value, setValue] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [open, setOpen] = useState(false);
   /**
@@ -157,14 +152,14 @@ const ProfileSection = () => {
                   <Box sx={{ p: 2 }}>
                     <Stack>
                       <Stack direction="row" spacing={0.5} alignItems="center">
-                        <Typography variant="h4">Good Morning,</Typography>
+                        <Typography variant="h4">Buenos dias,</Typography>
                         <Typography component="span" variant="h4" sx={{ fontWeight: 400 }}>
                           Johne Doe
                         </Typography>
                       </Stack>
-                      <Typography variant="subtitle2">Admin</Typography>
+                      <Typography variant="subtitle2">Porject Admin</Typography>
                     </Stack>
-                    <OutlinedInput
+                    {/*<OutlinedInput
                       sx={{ width: '100%', pr: 1, pl: 2, my: 2 }}
                       id="input-search-profile"
                       value={value}
@@ -179,12 +174,12 @@ const ProfileSection = () => {
                       inputProps={{
                         'aria-label': 'weight'
                       }}
-                    />
+                    />*/}
                     <Divider />
                   </Box>
                   <PerfectScrollbar style={{ height: '100%', maxHeight: 'calc(100vh - 250px)', overflowX: 'hidden' }}>
                     <Box sx={{ p: 2 }}>
-                      <UpgradePlanCard />
+                      {/*<UpgradePlanCard />*/}
                       <Divider />
                       <Card
                         sx={{
@@ -192,7 +187,7 @@ const ProfileSection = () => {
                           my: 2
                         }}
                       >
-                        <CardContent>
+                        {/*<CardContent>
                           <Grid container spacing={3} direction="column">
                             <Grid item>
                               <Grid item container alignItems="center" justifyContent="space-between">
@@ -226,7 +221,7 @@ const ProfileSection = () => {
                               </Grid>
                             </Grid>
                           </Grid>
-                        </CardContent>
+                      </CardContent>*/}
                       </Card>
                       <Divider />
                       <List

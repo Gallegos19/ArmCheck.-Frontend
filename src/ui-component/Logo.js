@@ -1,6 +1,10 @@
 // material-ui
+<<<<<<< HEAD
 // import { useTheme } from '@mui/material/styles';
 import logo from '../assets/images/logo.png'
+=======
+import logo from "../assets/images/icons/logo.png";
+>>>>>>> 6fbfc262ec97c2b6d2e62e69921b5bf1568dd969
 /**
  * if you want to use image instead of <svg> uncomment following.
  *
@@ -12,15 +16,22 @@ import logo from '../assets/images/logo.png'
 // ==============================|| LOGO SVG ||============================== //
 
 const Logo = () => {
+<<<<<<< HEAD
   // const theme = useTheme();
+=======
+  
+>>>>>>> 6fbfc262ec97c2b6d2e62e69921b5bf1568dd969
 
   return (
+
+    <img src={logo} alt="Berry" width="200" height="100" />
     /**
      * if you want to use image instead of svg uncomment following, and comment out <svg> element.
      *
      * <img src={logo} alt="Berry" width="100" />
      *
      */
+<<<<<<< HEAD
     <img src={logo} alt=""  width={"180"} />
     // <svg width="92" height="32" viewBox="0 0 92 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     //   <path
@@ -64,6 +75,8 @@ const Logo = () => {
     //     fill={theme.palette.primary.main}
     //   />
     // </svg>
+=======
+>>>>>>> 6fbfc262ec97c2b6d2e62e69921b5bf1568dd969
   );
 };
 
